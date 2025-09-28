@@ -57,10 +57,10 @@ class Scene_play extends Phaser.Scene {
   }
 
   /**
-   * Función que al chocar con un jugador, la bola salga entre un rango aleatorio de 120 grados
+   * Función que al chocar con un jugador, la bola salga entre un rango aleatorio de 150 grados
    */
   choke() {
-    this.ball.setVelocityY(Phaser.Math.Between(-120, 120));
+    this.ball.setVelocityY(Phaser.Math.Between(-150, 150));
   }
 
   update() {
@@ -96,7 +96,7 @@ class Scene_play extends Phaser.Scene {
       this.scoreLeft++;
       this.scoreTextLeft.setText(this.scoreLeft.toString());
       this.ball.setPosition(this.sys.game.config.width / 2, this.sys.game.config.height / 2);
-      this.ball.setVelocityX(-330);
+      this.ball.setVelocityX(330);
     }
   }
 }

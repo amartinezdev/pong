@@ -48,7 +48,7 @@ class Scene_play extends Phaser.Scene {
     this.ball.setCollideWorldBounds(true);
 
     // devuelve la bola a la misma velocidad
-    this.ball.setBounce(1);
+    this.ball.setBounce(1.03);
     this.ball.setVelocityX(-330);
 
     // físicas
@@ -88,7 +88,7 @@ class Scene_play extends Phaser.Scene {
       this.scoreRight++;
       this.scoreTextRight.setText(this.scoreRight.toString());
       this.ball.setPosition(this.sys.game.config.width / 2, this.sys.game.config.height / 2);
-      console.log(this.scoreRight);
+      this.ball.setVelocityX(-330);
     }
 
     // si marca el jugador izquierdo
@@ -96,6 +96,7 @@ class Scene_play extends Phaser.Scene {
       this.scoreLeft++;
       this.scoreTextLeft.setText(this.scoreLeft.toString());
       this.ball.setPosition(this.sys.game.config.width / 2, this.sys.game.config.height / 2);
+      this.ball.setVelocityX(-330);
     }
   }
 }

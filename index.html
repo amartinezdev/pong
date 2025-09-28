@@ -24,7 +24,7 @@
         flex-direction: column;
         align-items: center;
         background: #020024;
-        background: linear-gradient(161deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+        background: linear-gradient(140deg, rgb(32, 209, 240) 0%, rgb(157, 21, 161) 90%);
       }
 
       #contenedor {
@@ -39,8 +39,7 @@
 
       a {
         display: inline-block;
-        text-decoration: none;
-        transition: 0.3s; /* animar color y escala */
+        transition: 0.5s; /* animar color y escala */
       }
 
       a:visited {
@@ -48,25 +47,34 @@
       }
 
       a:hover {
-        color: rgb(89, 244, 255);
-        transform: scale(1.03);
+        color: rgb(198, 91, 248);
+        transform: scale(1.2);
       }
       p {
         color: white;
       }
       span {
-        background-color: blueviolet;
+        background: linear-gradient(140deg, #6667c3 10%, #7453bb 70%);
         border-radius: 20px;
         padding: 8px;
+        font-weight: bolder;
+        background-size: 300% 300%;
+        background-position: 0% 50%;
+        transition: 0.8s;
+      }
+
+      span:hover {
+        background-position: 100% 200%;
+        box-shadow: 0px 2px 10px black;
       }
     </style>
   </head>
   <body>
     <main>
-      <h1>ping~pong by <a href="https://alvaromartinez.dev" target="_blank">alvaromartinez.dev</a></h1>
+      <h1>pong by <a href="https://alvaromartinez.dev" target="_blank">amz</a></h1>
       <div id="contenedor"></div>
-      <p>made with ♡ with <span>Phaser</span></p>
-      <a href="https://github.com/amartinezdev/pong"
+      <p><span>made with ♡ with Phaser</span></p>
+      <a href="https://github.com/amartinezdev/pong" target="_blank"
         ><svg class="icon-github" width="32" height="32">
           <use href="/sprite.svg#github"></use></svg
       ></a>
